@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   imageInfo.plist
+   test
+
+   Created by niuy on 17/6/29.
+   Copyright (c) 2017年 niuy. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>image1.jpeg</key>
+        <string>iphone 5s</string>
+        <key>image1.jpeg</key>
+        <string>iphone 5c</string>
+        <key>image2.jpeg</key>
+        <string>ipad min with retain</string>
+        <key>image3.jpeg</key>
+        <string>ipad air</string>
+        <key>image4.jpeg</key>
+        <string>ipod</string>
+        
+    </dict>
+</plist>

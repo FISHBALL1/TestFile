@@ -36,4 +36,9 @@
     }];
 }
 
+- (void)testRefresh {
+    XCUIApplication *APP = [[XCUIApplication alloc] init];
+    [APP.tabBars.buttons[@"列表"] tap];
+}
+
 @end

@@ -1,0 +1,28 @@
+//
+//  test-Prefix.pch
+//  test
+//
+//  Created by niuy on 16/11/16.
+//  Copyright © 2016年 niuy. All rights reserved.
+//
+
+#ifndef test_Prefix_pch
+#define test_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* test_Prefix_pch */
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <Masonry/Masonry.h>
+#import "AFNetworking.h"
+#import "CommonDefine.h"
+#import "CommonImport.h"
+#import "UIImageView+WebCache.h"
+#import "AppDelegate.h"
+#import "LoadingAnimation.h"
+#import "UIView+Expand.h"
+//#import "FSCalendar.h"
+#endif

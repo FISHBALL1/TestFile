@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import <JSONModel/JSONModel.h>
 @interface ViewController : UIViewController
 
 

@@ -7,6 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
+#import "ViewController.h"
+#import "STCalendarViewController.h"
+#import "TotalViewController.h"
+#import "BlockViewController.h"
+#import "FisterViewController.h"
+#import "ScoreRankViewController.h"
+#import "RankViewController.h"
+#import "CategoryViewController.h"
+#import "FenLeiViewController.h"
+#import "gifViewController.h"
+#import "PaoMaDengViewController.h"
+#import "MPMovieViewController.h"
+#import "AVMovieViewController.h"
+#import "ThirdPartyMovieViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +31,39 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+    
+    //在程序中添加 UIWindow。这个是我们的程序窗口，我们一个程序的最基本承载界面
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //创建ViewController对象
+    //TotalViewController *view = [[TotalViewController alloc] init];
+    //FisterViewController *view = [[FisterViewController alloc] init];
+    //gifViewController *view = [[gifViewController alloc] init];
+    //PaoMaDengViewController *view = [[PaoMaDengViewController alloc] init];
+    
+    //MPMovieViewController *view = [[MPMovieViewController alloc] init];
+    ThirdPartyMovieViewController *view = [[ThirdPartyMovieViewController alloc] init];
+    
+    //CategoryViewController *view = [[CategoryViewController alloc] init];
+    //FenLeiViewController *view = [[FenLeiViewController alloc] init];
+    
+    //设置UIwindow的rootViewController为上面的这个ViewController，运行APP，首先进入ViewController界面。  然后再这个ViewController中进行UIView控件的添加。
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:view];
+     self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    
+    
+    //播放器会话设置
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    if (![[AVAudioSession sharedInstance] setActive:YES error:nil]) {
+        NSLog(@"Failed to set up a session");
+    }
+    //启用远程控制事件接收
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    
+       return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

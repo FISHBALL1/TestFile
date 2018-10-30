@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>danabaseurl</key>
+	<string>https://service.kingnetdc.com/dana</string>
+	<key>version</key>
+	<string>2</string>
+	<key>topic</key>
+	<string>dana_bwdz_sdk</string>
+	<key>token</key>
+	<string>ec02891814a148e46f0d24375bf4821b</string>
+	<key>project</key>
+	<string>dana_bwdz</string>
+</dict>
+</plist>
